@@ -1,7 +1,8 @@
 import typescript from "rollup-plugin-typescript2";
-import styles from "rollup-plugin-styles";
-import autoprefixer from "autoprefixer";
+import image from "@rollup/plugin-image";
+import sass from "rollup-plugin-sass";
 import svg from "rollup-plugin-svg";
+import commonjs from "@rollup/plugin-commonjs";
 import packageJson from "./package.json";
 
 const config = {
@@ -9,17 +10,10 @@ const config = {
   output: {
     file: packageJson.main,
     format: "cjs",
+    exports: "named",
     sourcemap: true
   },
-  plugins: [
-    typescript(),
-    svg(),
-    styles({
-      postcss: {
-        plugins: [autoprefixer()]
-      }
-    })
-  ],
+  plugins: [typescript(), image(), commonjs(), sass({ insert: true })],
   external: ["react", "react-dom"]
 };
 

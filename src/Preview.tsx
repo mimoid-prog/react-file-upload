@@ -34,7 +34,7 @@ const Preview = ({
     <div className="preview">
       <img
         src={fileState.preview}
-        alt="Remove icon"
+        alt="Preview"
         className={`previewImage ${shape} ${size}`}
       />
 

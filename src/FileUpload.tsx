@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import createBlob from "./utils/createBlob";
 import destroyBlob from "./utils/destroyBlob";
-import "./style.css";
+import "./style.scss";
 import * as types from "./types";
 import imageIcon from "./image.svg";
 import { nanoid } from "nanoid";
