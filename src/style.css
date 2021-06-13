@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+}
+
+.square {
+  border-radius: 0;
+}
+
+.rounded {
+  border-radius: 0.5rem;
+}
+
+.circle {
+  border-radius: 9999px;
+}
+
+.small {
+  width: 60px;
+  height: 60px;
+}
+
+.medium {
+  width: 80px;
+  height: 80px;
+}
+
+.big {
+  width: 100px;
+  height: 100px;
+}
+
+.input {
+  display: none;
+}
+
+.label {
+  background-color: #e6e6e6;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.2s ease;
+}
+
+.label:hover {
+  background-color: #dbdbdb;
+}
+
+.label:focus {
+  background-color: #dbdbdb;
+}
+
+.addPhotoIcon {
+  width: 35%;
+}
+
+.multipleBox {
+  display: flex;
+  flex-direction: column;
+}
+
+.multipleBox .preview {
+  margin-bottom: 1rem;
+}
+
+.preview {
+  display: flex;
+  align-items: center;
+}
+
+.previewImage {
+  object-fit: cover;
+  display: block;
+}
+
+.previewDataBox {
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.fileName {
+  font-weight: 700;
+  margin: 0;
+}
+
+.fileSize {
+  margin: 0;
+}
+
+.deleteBtn {
+  color: red;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid red;
+  font-size: 1rem;
+  text-align: left;
+  font-weight: 700;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+@media (min-width: 1024px) {
+  .rounded {
+    border-radius: 1rem;
+  }
+
+  .small {
+    width: 80px;
+    height: 80px;
+  }
+
+  .medium {
+    width: 100px;
+    height: 100px;
+  }
+
+  .big {
+    width: 120px;
+    height: 120px;
+  }
+
+  .preview {
+    margin-right: 1rem;
+  }
+
+  .removeBtn {
+    width: 20px;
+    height: 20px;
+    top: 6px;
+    right: 6px;
+  }
+
+  .removeIcon {
+    width: 8px;
+    height: 8px;
+  }
+}

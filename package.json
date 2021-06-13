@@ -1,0 +1,44 @@
+{
+  "name": "react-files-upload",
+  "version": "1.0.0",
+  "description": "React component for uploading files",
+  "homepage": "https://github.com/mimoid-prog/react-files-upload",
+  "keywords": [
+    "react",
+    "files",
+    "file upload",
+    "image upload"
+  ],
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "rollup -c",
+    "start": "rollup -c -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.14.5",
+    "@types/react": "^17.0.11",
+    "@types/react-dom": "^17.0.7",
+    "autoprefixer": "^10.2.6",
+    "babel-runtime": "^6.26.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "rollup": "^2.51.2",
+    "rollup-plugin-styles": "^3.14.1",
+    "rollup-plugin-svg": "^2.0.0",
+    "rollup-plugin-typescript2": "^0.30.0",
+    "typescript": "^4.3.2"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "dependencies": {
+    "nanoid": "^3.1.23"
+  }
+}
