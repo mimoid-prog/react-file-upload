@@ -1,5 +1,5 @@
 {
-  "name": "react-files-upload",
+  "name": "@mimoid-prog/react-file-upload",
   "version": "1.0.0",
   "description": "React component for uploading files",
   "homepage": "https://github.com/mimoid-prog/react-files-upload",
